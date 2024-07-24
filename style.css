@@ -115,35 +115,45 @@ nav ul li a {
     }
 }
 
-/* .menu-container {
-    float: right;
+/* Section */
+
+.welcome {
+    display: flex;
+    justify-content: center;
 }
 
-nav ul {
-    display: flex;
+.welcome-container {
     width: 100%;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
 }
 
-nav li {
-    height: 50px;
+.welcome img {
+    height: auto;
+    width: 100%;
+    opacity: .9;
 }
 
-nav a {
-    display: flex;
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    align-items: center;
-    color: black;
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #333333;
+    background-color: rgba(66, 66, 66, 0.199);
+    padding: 30px;
+    color: #f4f4f4;
 }
 
-nav a:hover {
-    background-color: #f0f0f0;
+.texto p {
+    margin-top: 10px;
+    color: #f4f4f4;
 }
 
-@media screen and {
-    
-} */
+.services-paragraph {
+    font-size: 12px;
+    padding: 10px 0;
+    padding-bottom: 5px;
+}
