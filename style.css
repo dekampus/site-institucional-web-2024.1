@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    padding-top: 10px;
+    border-bottom: 8px solid #d45500ff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
+    align-items: center;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    float: left;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.nome-companhia {
+    display: inline-block;
+    font-family: "Staatliches", sans-serif;
+    font-size: 30px;
+}
+
+nav {
+    display: none;
+    float: right;
+    width: 100%;
+    border-top: 2px solid #9e9e9e;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 25px;
+}
+
+.divisor-menu {
+    height: 20px;
+    width: 2px;
+    background-color: #c2c2c2;
+}
+
+.toggle {
+    position: relative;
+    float: right;
+    top: 8px;
+    right: 15px;
+}
+
+.toggle span {
+    font-size: 33px;
+    user-select: none;
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 50px;
+    }
+    
+    nav {
+        display: block;
+        border: none;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        float: none;
+    }
+
+    nav ul li {
+        transition: 250ms ease-in-out;
+    }
+
+    nav ul li:hover {
+        background-color: #f4f4f4;
+        transition: 250ms ease-in-out;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
+
+/* .menu-container {
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    display: flex;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+@media screen and {
+    
+} */
